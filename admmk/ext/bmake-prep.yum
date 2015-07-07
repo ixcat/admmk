@@ -1,0 +1,3 @@
+# see: http://repoforge.org/use if rpmforge-release not available
+install rpmforge-release
+run

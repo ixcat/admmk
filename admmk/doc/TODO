@@ -1,0 +1,11 @@
+.. $Id$
+
+system todo
+-----------
+
+- cleanup / better integrate needed logic from 'legacy' bsd-style 
+  native-build adm.{files,dirs}.mk so that these files can be removed.. 
+- generically support file preprocessing to allow for per-host
+  customization of template files
+- implement '${AUX}' overlay support for sensitive non-rcs files
+

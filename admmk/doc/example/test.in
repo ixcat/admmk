@@ -1,0 +1,13 @@
+#! /bin/sh
+# example admmk tree test driver
+# $Id$
+
+for d in host/h1 host/h2 svc/s1 svc/s2 svc host; do
+
+	(
+		rm -rf $SYS/obj
+		cd $SYS/src/$d && @_BINPREFIX_@mk install
+		find $SYS/obj
+	)  
+
+done

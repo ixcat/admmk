@@ -1,0 +1,25 @@
+#! /bin/sh
+
+# admmk PMake driver
+# $Id$
+
+# set make(1) command -
+# should point to appropriate PMake -
+# systems explicitly listed are expected to work as defined -
+# otherwise, we assume the platform make to be incompatible
+# and explicitly require a 'bmake'.
+
+case `uname -s` in
+        "FreeBSD"|"NetBSD"|"DragonFly")
+                MAKE=make
+                ;;
+        "OpenBSD"|"Linux")
+                MAKE=bmake
+                ;;
+	*)
+		MAKE=bmake
+		;;
+esac
+
+exec $MAKE -m $SYS/mk.local -m $SYS/mk $*
+

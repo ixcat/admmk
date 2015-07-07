@@ -1,0 +1,76 @@
+#! /bin/sh
+
+# admmk configure script
+# $Id$
+
+# defaults:
+
+_project="";
+_binprefix="adm";
+
+# subtitutions:
+
+sfiles="";
+sfiles="${sfiles} Makefile.in" 
+sfiles="${sfiles} bin/mk.env.in";
+sfiles="${sfiles} doc/example-src/test.in";
+
+svars="";
+svars="${svars} BINPREFIX";
+svars="${svars} SYS";
+
+# functions:
+
+help_exit() {
+	echo "usage: `basename $0` --project=/path/to/proj [--arg=val] [...]";
+	echo "where:"
+	echo "  --project: path to project root";
+	echo "and where --arg is one of:";
+	echo "  --binprefix: executable prefix (e.g. bin/${prefix}mk )";
+	exit 0;
+}
+
+print_config() {
+	echo "configuring with:";
+	echo "  --project: '${_project}'";
+	echo "  --binprefix: '${_binprefix}' (default: 'adm')";
+}
+
+subst_files() {
+	_args="";
+	for v in $svars; do
+		_args="${_args} -e s:@_${v}_@:`eval "echo \\$${v}"`:g";
+	done
+
+	for inf in $sfiles; do
+		outf=${inf%%.in};
+		sed ${_args} ${inf} > ${outf}
+	done
+}
+
+parse_args() {
+
+	# parse
+	for arg in $*; do
+		k=${arg%%=*}; v=${arg#*=};
+		case $k in
+			"--project") _project=$v;;
+			"--binprefix") _binprefix=$v;;
+			*) echo "warning: Unknown option $k" 1>&2;;
+		esac
+	done
+
+	# verify
+	[ -z "${_project}" ] && help_exit;
+	[ -z "${_binprefix}" ] && _binprefix=adm
+
+	# interpret & configure
+	SYS=${_project};
+	BINPREFIX=${_binprefix};
+}
+
+# _start:
+parse_args $*;
+print_config;
+subst_files;
+

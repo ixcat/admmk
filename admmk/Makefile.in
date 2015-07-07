@@ -1,0 +1,40 @@
+
+# This is *not* a GNU automakefile...
+
+DESTDIR=@_SYS_@
+BINPREFIX=@_BINPREFIX_@
+
+all:
+	@echo "no build - simply make install"
+
+install: install-top install-mk install-bin install-src
+
+install-top:
+	@echo install into ${DESTDIR}
+	install -d ${DESTDIR}/mk;
+	install -d ${DESTDIR}/bin;
+	install -d ${DESTDIR}/src;
+
+install-mk:
+	set -- mk/*.mk; \
+	for f; do \
+		install $$f ${DESTDIR}/$$f; \
+	done
+
+install-bin:
+	install -m 555 bin/mk ${DESTDIR}/bin/${BINPREFIX}mk 
+	install -m 555 bin/mk.env ${DESTDIR}/bin/${BINPREFIX}mk.env
+
+# create a valid blank sys.mk system definition if none exists.
+# todo: also setup blank src and svc dirs and appropriate aggregate makefiles
+
+install-src:
+	[ ! -f "${DESTDIR}/src/sys.mk" ] \
+	&& install -m 644 /dev/null ${DESTDIR}/src/sys.mk \
+	&& echo 'SYSHOSTS=' >> ${DESTDIR}/src/sys.mk \
+	&& echo 'SYSSVCS=' >> ${DESTDIR}/src/sys.mk \
+	|| exit 0;
+
+distclean:
+	rm -f Makefile bin/mk.env doc/example-src/test
+
