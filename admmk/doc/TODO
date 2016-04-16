@@ -8,4 +8,17 @@ system todo
 - generically support file preprocessing to allow for per-host
   customization of template files
 - implement '${AUX}' overlay support for sensitive non-rcs files
+- fix rdist on el7: built using rsh by default - should always supply ssh
+  or provide in-tree wrapper gizmo
+
+system ideas
+------------
+
+- auto empty svn:externals repobuilder gizmo tool - e.g.:
+  - run setup program, which:
+    - creates empty svn repo
+    - configure externals to point mk to upstream
+    - auto generates bin/<makewrapper>
+    - also creates script to do externals pull and rebootstrap
+    - fin!
 
