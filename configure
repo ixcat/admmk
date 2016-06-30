@@ -13,7 +13,7 @@ _binprefix="adm";
 sfiles="";
 sfiles="${sfiles} Makefile.in" 
 sfiles="${sfiles} bin/mk.env.in";
-sfiles="${sfiles} doc/example-src/test.in";
+sfiles="${sfiles} doc/example/test.in";
 
 svars="";
 svars="${svars} BINPREFIX";
