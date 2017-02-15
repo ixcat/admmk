@@ -1,3 +1,5 @@
-# $Id$
+
 this is adm.mk - a makefile library for systems managment.
+
 user documentation in doc/admmk.rst.
+
