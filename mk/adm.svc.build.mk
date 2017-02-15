@@ -1,7 +1,6 @@
 
 # adm.svc.build.mk
 # ================
-# $Id$
 #
 # Per-service build logic.
 #

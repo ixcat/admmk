@@ -5,8 +5,6 @@
 #
 # install 'action' framework
 #
-# $Id$
-#
 # This is a 2-component framework:
 #
 #   - action framework makefiles (adm.act.{inc,def,build?}.mk)

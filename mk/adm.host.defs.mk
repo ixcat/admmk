@@ -1,4 +1,3 @@
-# $Id$
 
 .include <adm.mod.defs.mk>
 

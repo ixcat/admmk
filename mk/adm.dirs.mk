@@ -1,4 +1,3 @@
-#	$Id$
 #	adapted to adm.mk model from:
 #	$NetBSD: bsd.files.mk,v 1.42 2011/09/10 16:57:35 apb Exp $
 

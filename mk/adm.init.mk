@@ -1,4 +1,3 @@
-# 	$Id$
 #	adapted to the adm.mk framework from:
 #	$NetBSD: bsd.init.mk,v 1.2 2003/07/28 02:38:33 lukem Exp $
 

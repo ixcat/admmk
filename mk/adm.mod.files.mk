@@ -5,8 +5,6 @@
 #
 # based on 'adm.files.mk', but hooks into module-defined targets
 #
-# $Id$
-#
 
 .if !defined(_ADM_SVC_FILES_MK_)
 _ADM_SVC_FILES_MK_=1

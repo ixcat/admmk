@@ -1,5 +1,4 @@
 # src/sys.mk: source tree 'system' definition file
-# $Id$
 
 .if !defined(_SRC_SYS_MK_)
 _SRC_SYS_MK_=1

@@ -6,8 +6,6 @@
 # install 'action' framework target definition macro include.
 # see adm.act.inc.mk for more details.
 #
-# $Id$
-#
 
 # per svc macro expansion
 # =======================

@@ -3,7 +3,6 @@
 #
 # top-level build driver makefile
 #
-#	$Id$
 #	heavily modified from, but inspired-by:
 #	$NetBSD: bsd.prog.mk,v 1.270.2.1 2012/03/02 18:27:55 riz Exp $
 #	@(#)bsd.prog.mk 8.2 (Berkeley) 4/2/94

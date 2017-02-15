@@ -2,7 +2,6 @@
 #
 # adm.mod.dirs.mk
 # ===============
-# $Id$
 #
 # based on 'adm.dirs.mk', but hooks into module-defined targets
 # to be used as a 'macro include' from modules

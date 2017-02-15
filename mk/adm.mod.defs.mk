@@ -1,7 +1,6 @@
 
 # adm.mod.defs.mk
 # ===============
-# .. $Id$
 #
 # Define per-service stub targets when operating in host context which
 # can be assembled into the global targets.  #

@@ -1,6 +1,5 @@
 
 # build-time/buildtype definitions/logic
-# $Id$
 
 .if !defined(_ADM_BUILD_MK_)
 _ADM_BUILD_MK_=1

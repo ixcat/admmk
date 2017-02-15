@@ -1,6 +1,5 @@
 
 # adm.host.inc.mk: common variables for host-specific logic
-# $Id$
 
 # grr - this makes paths staticish again..
 #  unless I want to define some top-level svcname:svcpath mapping

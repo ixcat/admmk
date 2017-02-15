@@ -2,8 +2,6 @@
 # adm.mod.inc.mk
 # ==============
 #
-# $Id$
-#
 # Top level definitions for modules
 
 .if !defined(_TOPMOD_)

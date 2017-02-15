@@ -1,7 +1,6 @@
 
 # adm.hosts.build.mk
 # ==================
-# .. $Id$
 #
 # build driver for all host scope builds.
 #

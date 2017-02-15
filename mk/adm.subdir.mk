@@ -1,8 +1,6 @@
 
 # subdirectory build support
-# $Id$
 
-#	$Id$
 #	modified from:
 #	$NetBSD: bsd.subdir.mk,v 1.52 2010/05/26 00:48:15 uwe Exp $
 #	@(#)bsd.subdir.mk	8.1 (Berkeley) 6/8/93

@@ -1,7 +1,6 @@
 #! /bin/sh
 
 # admmk PMake driver
-# $Id$
 
 # set make(1) command -
 # should point to appropriate PMake -

@@ -5,8 +5,6 @@
 # will probably have path issues on some other platforms - e.g. '-g bin'
 # not setup on some linuces
 
-# $Id$
-
 cd bmake \
 	&& make -f Makefile.boot \
 	&& install -m 555 -o root -g bin bmake /usr/local/bin/bmake \

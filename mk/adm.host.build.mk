@@ -1,7 +1,6 @@
 
 # adm.host.build.mk
 # =================
-# $Id$
 
 # one host scope build driver makefile.
 #

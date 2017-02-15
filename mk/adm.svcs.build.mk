@@ -1,7 +1,6 @@
 
 # adm.svcs.build.mk
 # =================
-# $Id$
 #
 # build driver for all svc scope
 #

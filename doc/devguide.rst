@@ -1,4 +1,3 @@
-.. $Id$
 
 Adm.mk Development Guide
 ========================

@@ -1,6 +1,5 @@
 # adm.svc.inc.mk
 # ==============
-# $Id$
 # 
 # top-level service include file
 #

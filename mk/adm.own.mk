@@ -1,7 +1,6 @@
 
 # top-level commands and variable settings for common items
 #
-#	$Id$
 #	modified for the adm.mk framework from:
 #	$NetBSD: bsd.own.mk,v 1.696.2.3 2012/09/17 19:00:33 riz Exp $
 
